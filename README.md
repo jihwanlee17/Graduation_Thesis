@@ -19,3 +19,9 @@ Graduation_Thesis repository에 수록된 코드들은 *한국외국어대학교
 * zflip3_Outlier_Detection.ipynb 파일은 Z flip 제품 후기 영상 댓글에서 이상치를 제거하는 코드이며 zfold3_Outlier_Detection.ipynb 파일은 Z fold 제품 후기 영상 댓글에서 이상치를 제거하는 코드입니다.
 
 ## 텍스트 전처리 및 분석
+* flip,fold_Preprocessing&Analyze.ipynb 파일에 전처리와 분석 코드가 모두 포함되어 있습니다.
+* 코드를 처음으로 실행할 때 코드에서 가장 상단에 주석으로 처리한 install 명령어들(! install pyLDAvis 제외)을 모두 실행시켜야 합니다.
+* 불용어 사전인 ''와 komoran 형태소 분석기 사전인 ''을 다운받아 코드에 활용하세요.
+  - 불용어 사전을 활용하여 텍스트에서 불용어 사전에 수록된 단어들(불용어들)을 제거합니다.
+  - komoran 형태소 분석기 사전에 새로운 단어와 이 단어에 대응되는 품사를 추가하여 미등록 단어(out of vocabulary, oov) 문제를 해결하세요.
+    + 단어 (탭) 품사 형태로 사전에 추가하면 됩니다.
