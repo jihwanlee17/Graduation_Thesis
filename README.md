@@ -9,19 +9,21 @@ Graduation_Thesis repository에 수록된 코드들은 *한국외국어대학교
 
 ***
 
-## 유튜브에서 댓글 수집(크롤링)하기
-* flip,fold_Youtube_comments_crawling.ipynb 파일을 이용했습니다.
+## 1. 유튜브에서 댓글 수집(크롤링)하기
+* **flip,fold_Youtube_comments_crawling.ipynb** 파일을 이용했습니다.
 * url에 Z flip 또는 Z fold 제품후기 유튜브 영상 url을 입력하면 댓글이 자동으로 추출됩니다.
 
-## 텍스트에서 이상치 제거하기
+## 2. 텍스트에서 이상치 제거하기
 * 지나치게 짧은 댓글, 즉 글자 수가 너무 적은 댓글에는 의미 있는 정보를 추출할 가능성이 매우 희박합니다.
 * 따라서 이러한 텍스트는 이상치로 간주하여 모두 제거했습니다.
-* zflip3_Outlier_Detection.ipynb 파일은 Z flip 제품 후기 영상 댓글에서 이상치를 제거하는 코드이며 zfold3_Outlier_Detection.ipynb 파일은 Z fold 제품 후기 영상 댓글에서 이상치를 제거하는 코드입니다.
+* **zflip3_Outlier_Detection.ipynb** 파일은 Z flip 제품 후기 영상 댓글에서 이상치를 제거하는 코드이며 **zfold3_Outlier_Detection.ipynb** 파일은 Z fold 제품 후기 영상 댓글에서 이상치를 제거하는 코드입니다.
 
-## 텍스트 전처리 및 분석
-* flip,fold_Preprocessing&Analyze.ipynb 파일에 전처리와 분석 코드가 모두 포함되어 있습니다.
+## 3. 텍스트 전처리 및 분석
+* **flip,fold_Preprocessing&Analyze.ipynb** 파일에 전처리와 분석 코드가 모두 포함되어 있습니다.
 * 코드를 처음으로 실행할 때 코드에서 가장 상단에 주석으로 처리한 install 명령어들(! install pyLDAvis 제외)을 모두 실행시켜야 합니다.
-* 불용어 사전인 ''와 komoran 형태소 분석기 사전인 ''을 다운받아 코드에 활용하세요.
+* 불용어 사전인 **'stopwords.txt'** 와 komoran 형태소 분석기 사전인 **'komoran_dict.txt'** 을 다운받아 코드에 활용하세요.
   - 불용어 사전을 활용하여 텍스트에서 불용어 사전에 수록된 단어들(불용어들)을 제거합니다.
-  - komoran 형태소 분석기 사전에 새로운 단어와 이 단어에 대응되는 품사를 추가하여 미등록 단어(out of vocabulary, oov) 문제를 해결하세요.
-    + 단어 (탭) 품사 형태로 사전에 추가하면 됩니다.
+    + 불용어 사전에 새로 발견한 불용어를 계속 추가해도 됩니다.
+    + new line 단위로 단어들이 구분되어 있으므로 불용어를 사전에 추가할 때에도 이 형식에 따라 추가합니다.
+  - komoran 형태소 분석기 사전에 새로운 단어와 그 단어에 대응되는 품사를 추가하여 미등록 단어(out of vocabulary, oov) 문제를 해결하세요.
+    + 단어 (탭) 품사 형태로 komoran 형태소 분석기 사전에 추가합니다.
