@@ -9,5 +9,7 @@ Graduation_Thesis repository에 수록된 코드들은 한국외국어대학교 
 
 ***
 
-## 우와ㅇㅇ
-ㅇㅇ
+## 유튜브에서 댓글 수집(크롤링)하기
+* flip,fold_Youtube_comments_crawling.ipynb 파일을 이용했습니다.
+* url에 Z flip 또는 Z fold 제품의 후기 영상 url을 입력하면 댓글이 자동으로 추출됩니다.
+
