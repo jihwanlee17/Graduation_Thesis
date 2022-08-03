@@ -13,3 +13,9 @@ Graduation_Thesis repository에 수록된 코드들은 *한국외국어대학교
 * flip,fold_Youtube_comments_crawling.ipynb 파일을 이용했습니다.
 * url에 Z flip 또는 Z fold 제품후기 유튜브 영상 url을 입력하면 댓글이 자동으로 추출됩니다.
 
+## 텍스트에서 이상치 제거하기
+* 지나치게 짧은 댓글, 즉 글자 수가 너무 적은 댓글에는 의미 있는 정보를 추출할 가능성이 매우 희박합니다.
+* 따라서 이러한 텍스트는 이상치로 간주하여 모두 제거했습니다.
+* zflip3_Outlier_Detection.ipynb 파일은 Z flip 제품 후기 영상 댓글에서 이상치를 제거하는 코드이며 zfold3_Outlier_Detection.ipynb 파일은 Z fold 제품 후기 영상 댓글에서 이상치를 제거하는 코드입니다.
+
+## 텍스트 전처리 및 분석
